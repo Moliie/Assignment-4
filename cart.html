@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart - Coffee Drinks Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-page="cart">
+  <header class="navbar">
+    <div class="logo"> Coffee Drinks Store</div>
+    <nav class="nav-links">
+      <a href="/">Products</a>
+      <a href="/cart">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <h1>Your Shopping Cart</h1>
+      <p>Review your selected drinks.</p>
+    </section>
+
+    <section class="cart-section">
+      <div id="cart-items"></div>
+
+      <div class="cart-summary">
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Tax: $<span id="tax">0.00</span></p>
+        <h3>Total: $<span id="total">0.00</span></h3>
+        <button id="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Coffee Drinks. All rights reserved.</p>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
+ 
