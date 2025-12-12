@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout - Coffee Drinks Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-page="checkout">
+  <header class="navbar">
+    <div class="logo"> Coffee Drinks Store</div>
+    <nav class="nav-links">
+      <a href="/">Products</a>
+      <a href="/cart">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+
+  <main class="main">
+    <section class="hero">
+      <h1>Checkout</h1>
+      <p>Enter your information to complete your order.</p>
+    </section>
+
+    <section class="checkout-section">
+      <form id="checkout-form" class="checkout-form">
+        <label>
+          Full Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Address
+          <input type="text" name="address" required />
+        </label>
+        <button type="submit">Place Order</button>
+      </form>
+
+      <div class="checkout-summary">
+        <h3>Order Summary</h3>
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Tax: $<span id="tax">0.00</span></p>
+        <h3>Total: $<span id="total">0.00</span></h3>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Coofee Drinks Store.</p>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
